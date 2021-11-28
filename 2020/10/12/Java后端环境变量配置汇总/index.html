@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#222">
-<meta name="generator" content="Hexo 5.0.2">
+<meta name="generator" content="Hexo 5.4.0">
   <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
@@ -29,7 +29,7 @@
 <meta property="og:description" content="1. Java环境变量配置   参数名 参数 说明    JAVA_HOME jdk路径    CLASSPATH .;%JAVA_HOME%\lib\dt.jar;%JAVA_HOME%\lib\tools.jar;    Path %JAVA_HOME%\bin;%JAVA_HOME%\jre\bin;    2. Gradle环境变量配置   参数名 参数 说明    GRADLE_HOME">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2020-10-12T01:40:54.000Z">
-<meta property="article:modified_time" content="2021-11-28T13:34:20.293Z">
+<meta property="article:modified_time" content="2021-11-28T13:50:51.776Z">
 <meta property="article:author" content="Juhong Liang">
 <meta property="article:tag" content="配置">
 <meta name="twitter:card" content="summary">
@@ -210,7 +210,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2021-11-28 21:34:20" itemprop="dateModified" datetime="2021-11-28T21:34:20+08:00">2021-11-28</time>
+                <time title="Modified: 2021-11-28 21:50:51" itemprop="dateModified" datetime="2021-11-28T21:50:51+08:00">2021-11-28</time>
               </span>
 
           
@@ -294,6 +294,7 @@
 <p>若需修改maven依赖包存放路径，需更改其配置文件 “maven路径\conf\settings.xml” </p>
 <p>找到其中的 “<localRepository>/path/to/local/repo</localRepository>“</p>
 <p>该行默认是注释掉的，将其取消注释后将中间的参数改为想要存放依赖包的路径即可</p>
+<p><em>修改Gradle和Maven路径后可能会导致IDEA找不到本地包</em></p>
 
     </div>
 
@@ -310,13 +311,6 @@
 
 
         
-    <div class="post-nav">
-      <div class="post-nav-item"></div>
-      <div class="post-nav-item">
-    <a href="/2021/11/28/hello-world/" rel="next" title="Hello World">
-      Hello World <i class="fa fa-chevron-right"></i>
-    </a></div>
-    </div>
       </footer>
     
   </article>
@@ -388,7 +382,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">2</span>
+          <span class="site-state-item-count">1</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
