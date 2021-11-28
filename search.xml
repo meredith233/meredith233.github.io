@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>Java后端环境变量配置汇总</title>
+    <url>/2020/10/12/Java%E5%90%8E%E7%AB%AF%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E9%85%8D%E7%BD%AE%E6%B1%87%E6%80%BB/</url>
+    <content><![CDATA[<h5 id="1-Java环境变量配置"><a href="#1-Java环境变量配置" class="headerlink" title="1. Java环境变量配置"></a>1. Java环境变量配置</h5><table>
+<thead>
+<tr>
+<th>参数名</th>
+<th>参数</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>JAVA_HOME</td>
+<td>jdk路径</td>
+<td></td>
+</tr>
+<tr>
+<td>CLASSPATH</td>
+<td>.;%JAVA_HOME%\lib\dt.jar;%JAVA_HOME%\lib\tools.jar;</td>
+<td></td>
+</tr>
+<tr>
+<td>Path</td>
+<td>%JAVA_HOME%\bin;%JAVA_HOME%\jre\bin;</td>
+<td></td>
+</tr>
+</tbody></table>
+<h5 id="2-Gradle环境变量配置"><a href="#2-Gradle环境变量配置" class="headerlink" title="2. Gradle环境变量配置"></a>2. Gradle环境变量配置</h5><table>
+<thead>
+<tr>
+<th>参数名</th>
+<th>参数</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>GRADLE_HOME</td>
+<td>gradle路径</td>
+<td></td>
+</tr>
+<tr>
+<td>Path</td>
+<td>%GRADLE_HOME%\bin;</td>
+<td></td>
+</tr>
+<tr>
+<td>GRADLE_USER_HOME</td>
+<td>任意路径</td>
+<td>该参数非必须参数，添加该参数会把所有的依赖包存放于指定路径</td>
+</tr>
+</tbody></table>
+<h5 id="3-Maven环境变量配置"><a href="#3-Maven环境变量配置" class="headerlink" title="3. Maven环境变量配置"></a>3. Maven环境变量配置</h5><table>
+<thead>
+<tr>
+<th>参数名</th>
+<th>参数</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>MAVEN_HOME</td>
+<td>maven路径</td>
+<td></td>
+</tr>
+<tr>
+<td>Path</td>
+<td>%MAVEN_HOME%\bin;</td>
+<td></td>
+</tr>
+</tbody></table>
+<p>若需修改maven依赖包存放路径，需更改其配置文件 “maven路径\conf\settings.xml” </p>
+<p>找到其中的 “<localRepository>/path/to/local/repo</localRepository>“</p>
+<p>该行默认是注释掉的，将其取消注释后将中间的参数改为想要存放依赖包的路径即可</p>
+]]></content>
+      <tags>
+        <tag>配置</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hello World</title>
+    <url>/2021/11/28/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+]]></content>
+  </entry>
+</search>
